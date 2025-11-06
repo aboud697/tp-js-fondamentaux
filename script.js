@@ -27,7 +27,7 @@ const moi = {
 };
 
 console.log(moi);
-console.log("Je m'appelle Abdllah Jaouad.")
+console.log("Je m'appelle " + moi.prenom + " " + moi.nom)
 
 const notes = [12, 15, 9, 18];
 
@@ -41,13 +41,26 @@ for (let i = 0; i < notes.length; i++) {
 const classe = [
     { prenom: 'Alice', age: 18 },
     { prenom: 'Bob', age: 19},
-    { prenom: 'Maxime', age: 17 }
+    { prenom: 'Louise', age: 17 }
 ]
 
 for (let i = 0; i < classe.length; i++) {
     if (classe[i].age >= 18) {
     console.log(classe[i].prenom + " est majeur");
 } else {
-    console.log("le reste des éleves est mineur");
+    console.log(classe[i].prenom + " est mineur");
 }
 }
+const prenom = "Alice"
+
+function saluer (prenom) {
+    const message = "Bonjour " + prenom;
+    return message;
+}
+
+// On "appelle" la fonction
+const salutationPourAlice = saluer("Alice");
+console.log(salutationPourAlice); // Affiche "Bonjour Alice"
+
+
+const estMajeur = (age) => age >=18
