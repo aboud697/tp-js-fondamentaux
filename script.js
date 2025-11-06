@@ -63,4 +63,4 @@ const salutationPourAlice = saluer("Alice");
 console.log(salutationPourAlice); // Affiche "Bonjour Alice"
 
 
-const estMajeur = (age) => age >=18
+const estMajeur = (age) => age >= 18
